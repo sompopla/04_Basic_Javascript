@@ -59,7 +59,42 @@
 
 ```javascript
     const myName = "Sompop Laya";
-    const myAge = "31";
+    const myAge = "300";
     const myAddress = "Nonthaburi";
     const myProfile = myName + myAge "ปี" + myAddress;
 ```
+<hr>
+
+### แบบฝึกหัด : การดำเนินการเบื้องต้น
+
++ ให้ระบุค่าของ a,b,c และ d หลังจบ statement ทั้งหมด
+
+```javascript
+    let a = 1, b = 1;
+    let c = ++a;
+    let d = b++;
+
+    ตอบ.
+    a = 1;
+    b = 1;
+    c = 2;
+    d = 1;
+```
++ จงหาผลลัพธ์ของ statement ดังต่อไปนี้
+
+```javascript
+    1. "" + 1 + 0;      // 10
+    2. "" - 1 + 0;      // -1
+    3. true + false;    // 1
+    4. 6 / "3";         // 2
+    5. "2" * "3";       // 6
+    6. 4 + 5 + "px";    // "9px"
+    7. "$" + 4 + 5;     // "$45"
+    8. "4" - 2;         // 2
+    9. "4px" - 2;       // NaN
+    10. 7 / 0           // Infinity
+    11. " -9 " + 5;     // " -9 5"
+    12. " -9 " - 5;     // -14
+    13. null + 1;       // 1
+    14. undefined + 1;  // NaN
+    15. " \t \n" - 2;   // -2
