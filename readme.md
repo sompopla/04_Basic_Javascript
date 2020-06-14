@@ -98,3 +98,82 @@
     13. null + 1;       // 1
     14. undefined + 1;  // NaN
     15. " \t \n" - 2;   // -2
+```
+
+<hr>
+
+### แบบฝึกหัด : การเปรียบเทียบ
+
++ จงหาค่าเปรียบเทียบต่อไปนี้
+
+```javascript
+    - 5 > 4                     // true
+    - "apple" > "pineapple"     // false
+    - "2" > "12"                // true
+    - undefined == null         // true
+    - undefined === null        // false
+    - "bee" < "be"              // flase
+    - "bee" > "Bee"             // true
+    - "Bee" < "be"              // true
+```
+
+<hr>
+
+### แบบฝึกหัด : การเขียนเงื่อนไข
+
++ 1.Browser จะโชว์ข้อความ "Hello Codecamp #5" ไหม
+
+```javascript
+    ตอบ. แสดง "Hello Codecamp #5"
+```
+
++ 2.ใช้ if else ในการเขียนถามชื่อของคุณ
+    + ถ้าตอบถูกให้แสดงคำว่า "เก่งมาก"
+    + ถ้าตอบผิดให้แสดงคำว่า "คุณไม่รู้จักชื่อฉัน"
+
+```javascirpt
+    let myName = prompt("ชื่อคุณคืออะไร ?","tum");
+    if(myName == "tum") {
+        alert("เก่งมาก");
+    }else{
+        alert("คุณไม่รู้จักชื่อฉัน") 
+    }
+```
+
++ 3.ใช้ prompt ในการรับคะแนนมาคำนวนเกรด
+    + ถ้าคะแนน มากกว่าเท่ากับ 80 ได้ A
+    + ถ้าคะแนน อยู่ระหว่าง 70 - 79 	ได้ B
+    + ถ้าคะแนน อยู่ระหว่าง 60 - 69 	ได้ C
+    + ถ้าคะแนน อยู่ระหว่าง 50 - 59 	ได้ D
+    + ถ้าคะแนน น้อยกว่า 50 ได้ F
+
+```javascript
+    let myScore = prompt("คุณได้คะแนนสอบเท่าไร ?","77");
+    if(myScore < 50) {
+        alert("คุณได้เกรด F");
+    }else if(myScore <= 59) {
+        alert("คุณได้เกรด  D");
+    }else if(myScore <= 69) {
+        alert("คุณได้เกรด  C");
+    }else if(myScore <= 79) {
+        alert("คุณได้เกรด  B");
+    }
+        alert("คุณได้เกรด A");
+```
+
++ 4.เปลี่ยน if-else ข้างล่างในอยู่ในรูปของ Ternary Operators
+
+```javascript
+    let age = prompt('How old are you ?');
+    let price;
+    if(age < 18) {
+        price = 2000;
+    }else{
+        price = 3500;
+    }
+
+    //Ternary Operators
+    price = (age < 18) ? price = 2000 : price = 3500;
+
+    alert(price);
+```
