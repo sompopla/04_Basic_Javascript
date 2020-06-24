@@ -236,6 +236,7 @@
     let txt_string = `Hello, lt's me."Mario".`;
     console.log(txt_string);
 ```
+<hr>
 
 ## Javascript Basic Part 2
 
@@ -306,6 +307,7 @@
          }
             alert("ยกเลิก");
 ```
+<hr>
 
 ### แบบฝึกหัด : วงวน for และ while     
 
@@ -388,4 +390,160 @@
             }
                 continue;
         }
+```
+<hr>
+
+### แบบฝึกหักด : Swtich Cases
+
++ 1.แปลง Code ดังกล่าวเป็น if-else statement
+
+```javascript
+    // Switch case statement
+    switch (bowser) {
+        case 'Edge' :
+            alert("You've got the Edge!");
+            break;
+        case 'Chrome':
+        case 'Firefox':
+        case 'Safari':
+        case 'Opera':
+            alert("Okay we support these browsers too");
+            break;
+        default:
+            alert('We hope that this page looks ok!');      
+    }
+
+    // แปลงเป็น if - else statement
+        if(bowser === 'Edge') {
+            alert(("You've got the Edge!"); 
+            exit();          
+        } else if(bowser === 'Chrome') {
+
+        } else if(bowser === 'Firefox') {
+
+        } else if(bowser === 'Safari') {
+
+        } else if(bowser === 'Opera') {
+            alert('Okay we support these browsers too');
+            exit(); 
+        }
+            alert('We hope that this page looks ok!');
+```
+
++ 2.แปลง Code ดังกล่าวเป็น Switch cases
+
+```javascript
+    // if - else statement
+    let a = +prompt('a?', '');
+
+    if(a == 0) {
+        alert( 0 );
+    }
+    if(a == 1) {
+        alert( 1 );
+    }
+    if(a == 2 || a == 3) {
+        alert( '2,3' );
+    }
+
+    // แปลงเป็น Switch Cases
+    let a = +prompt('a?', '');
+
+    switch (a) {
+        case 0:
+            alert( 0 );
+            break;
+        case 1:
+            alert( 1 );
+            break;
+        case 2 || 3:
+            alert( '2,3');
+            break;
+    }
+```
+<hr>
+
+### แบบฝึกหัดพิเศษ : ฟังก์ชั่น
+
+![image](https://i.ibb.co/5BKK9b5/1.jpg)
+
+```javascript
+        const method_Draw = (n) => String.prototype.padStart(n,'*');
+
+        console.log(method_Draw(2));
+        console.log(method_Draw(3));
+        console.log(method_Draw(4));
+
+```
+
+![image](https://i.ibb.co/R0TPZSz/2.jpg)
+
+```javascript
+    function meThod_draw(n) {
+        let result = '';
+        for (let i = 0; i < n; i++) {
+            for (let z = 0; x < n; z++) {
+                result = result + '*';
+            }
+                result = result + '\n';
+            }
+        return result;
+    }
+    console.log(meThod_draw(2));
+    console.log(meThod_draw(3));
+    console.log(meThod_draw(4));
+```
+
+![image](https://i.ibb.co/6R5gdLR/3.jpg)
+
+```javascript
+   function meThod_draw(n) {
+        let result = '';
+        for (let i = 1; i <= n; i++) {
+            for (let z = 1; z <= n; z++) {
+                result = result + z;
+            }
+                result = result + '\n';
+        }
+            return result;
+        }
+    console.log(meThod_draw(2));
+    console.log(meThod_draw(3));
+    console.log(meThod_draw(4));
+```
+
+![image](https://i.ibb.co/x74CbLR/4.jpg)
+
+```javascript
+    function meThod_draw(n) {
+        let result = '';
+        for (let i = 1; i <= n; i++) {
+            for (let z = 1; z <= n; z++) {
+                result = result + i;
+            }
+                result = result + '\n';
+        }
+        return result;
+        }
+    console.log(meThod_draw(2));
+    console.log(meThod_draw(3));
+    console.log(meThod_draw(4));
+```
+
+![image](https://i.ibb.co/7KL319W/5.jpg)
+
+```javascript
+    function meThod_draw(n) {
+        let result = '';
+            for (let i = n; i >= 1; i--) {
+            for (let z = 1; z <= n; z++) {
+                    result = result + i;
+                }
+                    result = result + '\n';
+            }
+                return result;
+    }
+    console.log(meThod_draw(2));
+    console.log(meThod_draw(3));
+    console.log(meThod_draw(4));
 ```
